@@ -60,4 +60,6 @@ Dirección 71, SCALING_YSC Bit[7] y Bit[6:0]
 
 * Item 4 **Reestablecer todos los registros**. Dirección 12, COM7 Bit[7] (SCCB Register Reset, 0: No change, 1: Resets all registers to default values)
 
+## Proceso realizado
 
+Primeramente se busco en el datasheet el tamaño de memoria blockRAM en la Nexys 4, ya que esta es la memoria disponible por la misma para la creacion de la RAM, esta memoria es de 607.5 kB, con este valor se procedio a calcular el tamaño 
