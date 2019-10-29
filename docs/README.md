@@ -24,7 +24,9 @@ Con este formato y resolución se requieren 153.6kB de memoria para la pantalla.
 
 ### Pregunta 3. ¿Cuáles son los registros de configuración de la cámara OV7670 que permiten tener la configuración dada en la pregunta 2?
 
-* Item 1 **Habilitar el escalado**. Dirección 0D, COM4 Bit[5:4] (00:Full window,
+* **Habilitar el escalado**. 
+
+ Dirección 0D, COM4 Bit[5:4] (00:Full window,
 
  01:1/2 window,
 
@@ -41,23 +43,34 @@ Dirección 42, COM17 Bit[7:6] (00:Normal,
  11:1/4)
 
 
-* Item 2 **Configurar el formato y tamaño del pixel**. 
+* **Configurar el formato y tamaño del pixel**. 
 
-Dirección 40, COM15 Bit[5:4]=01 y 
+Dirección 40, COM15 Bit[5:4]=01.
 
-Dirección 12, COM7 Bit[2] 
+Dirección 12, COM7 Bit[2] (
 
 Output Format - RGB selection), 
 
 Bit[1] (Color Bar), 
 
-Bit[0] (Output forma - Raw RGB).
+Bit[0] (Output form - Raw RGB).
 
 
-* Item 3 **Para test de barra de colores**. Dirección 70, SCALING_XSC Bit[7] y Bit[6:0]
+* **Para test de barra de colores**. 
 
-Dirección 71, SCALING_YSC Bit[7] y Bit[6:0]
+	Dirección 70, SCALING_XSC Bit[7] y 
 
-* Item 4 **Reestablecer todos los registros**. Dirección 12, COM7 Bit[7] (SCCB Register Reset, 0: No change, 1: Resets all registers to default values)
+Bit[6:0] (Horizontal scale factor)
+
+	Dirección 71, SCALING_YSC Bit[7] y 
+
+Bit[6:0] (Vertical scale factor)
+
+(XBit[7], YBit[7]) (00: No test output,
+01: Shifting "1"
+
+* **Reestablecer todos los registros**. 
+
+Dirección 12, COM7 Bit[7] (SCCB Register Reset, 0: No change, 1: Resets all registers to default values)
 
 
