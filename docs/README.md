@@ -2,9 +2,9 @@
 
 # Grupo de trabajo 03
 
-###Ericson Brayan Mesa Orjuela
-###Oscar Mauricio Saavedra Gonzalez
-###Sergio Andres Gerena Gomez
-###Emiro Andres Lara Ruiz
+##Ericson Brayan Mesa Orjuela
+##Oscar Mauricio Saavedra Gonzalez
+##Sergio Andres Gerena Gomez
+##Emiro Andres Lara Ruiz
 
 ## Respuestas
