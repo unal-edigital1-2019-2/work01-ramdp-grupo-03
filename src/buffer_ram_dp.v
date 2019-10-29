@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module buffer_ram_dp#( 
-	parameter AW = 15, // Cantidad de bits  de la dirección 
+	parameter AW = 17, // Cantidad de bits  de la dirección 
 	parameter DW = 16, // cantidad de Bits de los datos 
 	parameter   imageFILE= "ramdp/image.men")
 	(  
