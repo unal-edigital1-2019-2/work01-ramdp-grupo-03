@@ -62,4 +62,5 @@ Dirección 71, SCALING_YSC Bit[7] y Bit[6:0]
 
 ## Proceso realizado
 
-Primeramente se busco en el datasheet el tamaño de memoria blockRAM en la Nexys 4, ya que esta es la memoria disponible por la misma para la creacion de la RAM, esta memoria es de 607.5 kB, con este valor se procedio a calcular el tamaño 
+Primeramente se busco en el datasheet el tamaño de memoria blockRAM en la Nexys 4, ya que esta es la memoria disponible por la misma para la creacion de la RAM, esta memoria es de 607.5 kB, con este valor se procedio a calcular el tamaño del formato ha emplear teniendo en cuenta que se usara el RGB565 lo cual implica que cada pixel ocupa 2 Bytes, para estos calculos se uso la siguiente ecuación:
+
