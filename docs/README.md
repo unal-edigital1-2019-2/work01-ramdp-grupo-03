@@ -74,6 +74,6 @@ De esta manera, disponemos en realidad de 303750 pixeles, a continuacion se mues
 
 de esta forma se decidio por la configuracion de (320*240), una vez decidido este parametro, se procede a encontrar los valores de AW y DW, el DW lo tenemos por el formato como tal (RGB565) el cual sera los bits empleados para el desplazamiento lo cual sera de 16, para AW se tiene que:
 
-RAM=16*2^AW
+(320 * 240)=16 * 2^AW
 
 
