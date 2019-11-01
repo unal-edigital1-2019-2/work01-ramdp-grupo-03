@@ -74,6 +74,9 @@ De esta manera, disponemos en realidad de 303750 pixeles, a continuacion se mues
 
 de esta forma se decidio por la configuracion de (320*240), una vez decidido este parametro, se procede a encontrar los valores de AW y DW, el DW lo tenemos por el formato como tal (RGB565) el cual sera los bits empleados para el desplazamiento lo cual sera de 16, para AW se tiene que:
 
-(320 * 240)=16 * 2^AW
+(320 * 240) * 16=16 * 2^AW
 
+De esto tenemos como respuesta 16.2288 lo que se aproxima a 17 para evitar que falten registros, de esta manera tenemos los parametros AW y DW siendo respectivamente 17 y 16.
+
+Por consiguiente y a manera de conclusion, se opto por trabajar en el formato RGB565, empleando como FPGA  la nexys 4, y en un tamaño de ventana de (320 * 240).
 
