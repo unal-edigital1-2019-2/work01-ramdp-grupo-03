@@ -3,8 +3,8 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    13:34:31 10/22/2019 
-// Design Name: 	 Ferney alberto Beltran Molina
+// Create Date:    12:19:55 10/27/2019 
+// Design Name: 
 // Module Name:    buffer_ram_dp 
 // Project Name: 
 // Target Devices: 
@@ -19,9 +19,9 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module buffer_ram_dp#( 
-	parameter AW = 15, // Cantidad de bits  de la dirección 
+	parameter AW = 17, // Cantidad de bits  de la dirección 
 	parameter DW = 16, // cantidad de Bits de los datos 
-	parameter   imageFILE= "ramdp/image.men")
+	parameter   imageFILE= "/home/saav9/work01-ramdp-grupo-03/src/image.men")
 	(  
 	input  clk, 
 	input  [AW-1: 0] addr_in, 
