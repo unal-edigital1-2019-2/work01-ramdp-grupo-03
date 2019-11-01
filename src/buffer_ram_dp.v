@@ -21,7 +21,7 @@
 module buffer_ram_dp#( 
 	parameter AW = 17, // Cantidad de bits  de la dirección 
 	parameter DW = 16, // cantidad de Bits de los datos 
-	parameter   imageFILE= "/home/saav9/Documentos/xilinxprojects/RAM/image.men")
+	parameter   imageFILE= "/home/saav9/work01-ramdp-grupo-03/src/image.men")
 	(  
 	input  clk, 
 	input  [AW-1: 0] addr_in, 

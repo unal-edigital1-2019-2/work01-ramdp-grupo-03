@@ -18,10 +18,14 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module CM(clk, regwrite);
+module CM(clk, regwrite,data_out);
 input clk;
 input regwrite;
-reg addr_out, regread;
-buffer_ram_dp RAM	( clk, , , regwrite, , addr_out, regread);
+output [15: 0] data_out;
+reg [16: 0] addr_out;
+reg regread;
+reg [16: 0] addr_in;
+reg [15: 0] data_in ;
+buffer_ram_dp RAM	( clk,addr_in,data_in, regwrite, data_out , addr_out, regread);
 
 endmodule
