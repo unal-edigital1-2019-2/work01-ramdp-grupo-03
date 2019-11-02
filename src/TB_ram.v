@@ -57,8 +57,9 @@ module TB_ram;
 
   // Adicionar las estimulos necesarios para simular la lectura y escritura de la memoria ram
 		# 10 regread=1;
-	   
-
+		
+		
+		
 	end
 	always #1 clk = ~clk ;
 endmodule

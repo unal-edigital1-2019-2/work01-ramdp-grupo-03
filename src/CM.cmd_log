@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "/home/brayan/Documentos/work01-ramdp-grupo-03/src/CM.xst" -ofn "/home/brayan/Documentos/work01-ramdp-grupo-03/src/CM.syr" 
+xst -intstyle ise -ifn "/home/brayan/work01-ramdp-grupo-03/src/CM.xst" -ofn "/home/brayan/work01-ramdp-grupo-03/src/CM.syr" 
+xst -intstyle ise -ifn "/home/brayan/work01-ramdp-grupo-03/src/CM.xst" -ofn "/home/brayan/work01-ramdp-grupo-03/src/CM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4_Master.ucf -p xc7a100t-csg324-1 CM.ngc CM.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CM_map.ncd CM.ngd CM.pcf 
+par -w -intstyle ise -ol high -mt off CM_map.ncd CM.ncd CM.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CM.twx CM.ncd -o CM.twr CM.pcf -ucf Nexys4_Master.ucf 
+xst -intstyle ise -ifn "/home/brayan/work01-ramdp-grupo-03/src/CM.xst" -ofn "/home/brayan/work01-ramdp-grupo-03/src/CM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4_Master.ucf -p xc7a100t-csg324-1 CM.ngc CM.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CM_map.ncd CM.ngd CM.pcf 
+par -w -intstyle ise -ol high -mt off CM_map.ncd CM.ncd CM.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CM.twx CM.ncd -o CM.twr CM.pcf -ucf Nexys4_Master.ucf 

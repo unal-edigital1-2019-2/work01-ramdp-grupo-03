@@ -67,7 +67,7 @@ Bit[6:0] (Horizontal scale factor)
 Bit[6:0] (Vertical scale factor)
 
 (XBit[7], YBit[7]) (00: No test output,
-01: Shifting "1"
+01: Shifting "1", 10: 8-bar color bar, 11: Fade to gray color bar)
 
 * **Reestablecer todos los registros**. 
 

@@ -1,0 +1,29 @@
+Command line:
+   buffer_ram_dp_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  41519
+
+Fri Nov  1 19:54:26 2019
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 198.423 Meg
+
+ Total Signals          : 19
+ Total Nets             : 82
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 2097810
+Total Line Count : 22
+
+ Total Simulation Time: 0.11 sec
+
+ Current Memory Usage: 273.924 Meg
+
+Fri Nov  1 19:54:40 2019
+
